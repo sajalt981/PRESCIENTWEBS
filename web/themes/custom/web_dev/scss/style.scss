@@ -1,0 +1,210 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    background: $white;
+}
+
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: #313552 !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+// Custom
+
+h2 {
+  margin-bottom: 2.2rem;
+}
+h3 {
+  margin-bottom: 1.2rem;
+} 
+.blurb {
+  font-size: 12px;
+  color: #f0ba72;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+img {max-width: 100%;}
+
+.btn-primary {
+  background-color: #1f2336;
+  border: 2px solid #f0ba72;
+  height: 50px;
+  min-width: 165px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+} 
+
+.path-frontpage {
+  background-image: url("../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-color: #1f2336;
+  background-size: contain;
+  background-position: 0 50px;
+  color: #ffffff;
+  h1, h2, h3, p {
+    color: #ffffff;
+  }
+}
+
+.hero-row {
+  @include align-items(center);
+}
+
+.about-wrapper {
+  background-color: #313552;
+  .about-header {
+    background-color: #2a2c47;
+	text-align: center;
+	span {
+	  background-color: #f0ba72;
+	  text-transform: uppercase;
+	  color: #2a2c47;
+	  line-height: 72px;
+      display: inline-block;
+      padding: 0 2rem;
+	}
+  }
+  .about-content {
+    .row {
+	  @include align-items(center);
+	}
+	h2 {
+	  margin-bottom: 1.4rem;
+	}
+  }
+  .abt-img {
+    padding-top: 2rem;
+	padding-bottom: 2rem;
+  }
+}
+
+.my-work {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.wrap-proj {
+  background-color: #313552;
+  border-bottom: 5px solid #f0ba72;
+  .proj-img {
+    border-radius: 12px;
+	overflow: hidden;
+  }
+  .proj-info {
+    padding: 2rem;
+	>p {
+	  margin: 0;
+	}
+  }
+  .proj-skills {
+    h3 {
+	  font-size: 12px;
+	  color: #f0ba72;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  display: inline-block;
+	}
+  }
+  .proj-name {
+    p {
+	  font-size: 1.5rem;
+	  margin: 0 0 1rem;
+	}
+  }  
+}
+
+// My skills 
+
+.featured-bottom {
+  background-color: #23263d;
+  padding: 2.5rem;
+  .block {
+    width: 100%;
+  }
+  #block-myskills {
+    ul {
+	  list-style: none;
+	  padding: 0;
+	  >li {
+	    margin-bottom: 2rem;
+		&:last-child {margin: 0;}
+	  }
+	}
+	.row {margin: 0;}
+  }
+}
+
+.skill-rate {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  h4 {
+    font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+  }
+  span {
+    color: #f0ba72;
+  }
+}
+
+.above-footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  .block {
+    width: 100%;
+  }
+}
